@@ -1,0 +1,9 @@
+değişken ve dosya isimlendirme kuralları
+1- dosya ve değişken isimlerinde sadece ingiliz alfabesi harfleri, rakamlar ve alt çizgi _ karakterleri olabilir.
+2- dosya ve değişken isimleri rakam ile başlayamaz.
+
+sayılarla işlem yaparken işlemler sonucu oluşan sayının tam sayı mı? ondalıklı sayı mı? olcağını bilmek önemlidir.
+ bunun için:
+1- işleme giren sayılardan biri dahi ondalıklı ise sonuç ondalıklı çıkar
+2- işlem bölme(/) ise sonuç mutlaka ondalıklı çıkar
+3- diğer şartlarda sonuç hep tam sayıdır.
