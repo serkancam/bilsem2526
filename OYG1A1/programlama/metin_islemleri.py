@@ -29,3 +29,4 @@ print(isim[3])#s
 ###bunlar yalnızca pythonda olur###
 print(isim[::-1])#meslib
 print(isim[::2])#ble
+
