@@ -19,6 +19,15 @@ def adam_ciz(hk):
     ADAM_ASMACA = [
     r"""
   +---+
+      |
+      |
+      |
+      |
+      |
+=========
+""",
+    r"""
+  +---+
   |   |
       |
       |
@@ -126,5 +135,3 @@ while(True):
         time.sleep(5)
     else:
         break
-
-
