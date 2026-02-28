@@ -7,9 +7,9 @@ yol=os.path.join(os.getcwd(),"goruntu_isleme","bolum2","nature.jpg")
 img=cv2.imread(yol)
 
 img_mean33=cv2.blur(img,(3,3))
-img_mean55=cv2.blur(img,(5,5))
+img_mean55=cv2.blur(img,(15,15))
 img_median33=cv2.medianBlur(img,3)
-img_median55=cv2.medianBlur(img,5)
+img_median55=cv2.medianBlur(img,15)
 
 cv2.imshow("orijinal",img)
 cv2.imshow("mean33",img_mean33)
