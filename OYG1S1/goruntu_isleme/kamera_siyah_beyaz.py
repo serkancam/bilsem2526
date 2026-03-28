@@ -9,16 +9,19 @@ while True:
     t,siyah_beyaz=cv2.threshold(gri,180,255,cv2.THRESH_BINARY)
     t,otsu=cv2.threshold(gri,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
     adaptif=cv2.adaptiveThreshold(gri,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,7,3)
-    median=cv2.medianBlur(frame,17)
-    canny=cv2.Canny(gri,10,170)
+    median=cv2.medianBlur(frame,3)
+    gri2=cv2.cvtColor(median,cv2.COLOR_BGR2GRAY)
+    adaptif2=cv2.adaptiveThreshold(gri2,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,7,3)
+    canny=cv2.Canny(gri,50,170)
     
     #gösterimler
     cv2.imshow("orijinal",frame)
-    cv2.imshow("gri",gri)
-    cv2.imshow("siyah_beyaz",siyah_beyaz)
+    # cv2.imshow("gri",gri)
+    # cv2.imshow("siyah_beyaz",siyah_beyaz)
     cv2.imshow("otsu",otsu)
     cv2.imshow("adaptif",adaptif)
-    cv2.imshow("median",median)
+    cv2.imshow("adaptif2",adaptif2)
+    # cv2.imshow("median",median)
     cv2.imshow("canny",canny)
     if not(durum) or cv2.waitKey(20)==27:
         break

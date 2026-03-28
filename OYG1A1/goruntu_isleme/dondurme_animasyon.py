@@ -25,4 +25,5 @@ while True:
     olcek *= carpan
     if cv2.waitKey(25)==27:
         break
+       
 cv2.destroyAllWindows()

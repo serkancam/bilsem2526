@@ -31,4 +31,3 @@ l_img=np.array(l_harfi,dtype=np.uint8)
 
 cv2.imshow("harf",l_img)
 cv2.waitKey(0)
-
